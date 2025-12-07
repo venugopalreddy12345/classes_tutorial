@@ -33,3 +33,10 @@ print(std3.branch)
 import datetime
 my_date=datetime.date(2025,12,7)
 print(student.is_work_day(my_date))
+class teacher(student):
+	def __init__(self,name,age,branch,salary,teachername):
+		super().__init__(name,age,branch,fee=None)
+		self.teachername=teachername
+		self.salary=salary
+t1=teacher("hook",34,"cse",60000,"puri")
+print(t1.teachername)
